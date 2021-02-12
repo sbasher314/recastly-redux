@@ -13,13 +13,14 @@ module.exports = {
     ecmaFeatures: {
       'jsx': true,
       "sourceType": "module",
-    }
+    },
+    'ecmaVersion': 2020
   },
   rules: {
     /* Indentation */
     'no-mixed-spaces-and-tabs': 2,
     'indent': [2, 2, {"SwitchCase": 1}],
-    /* Variable cames */
+    /* Variable camels */
     'camelcase': 2,
     /* Language constructs */
     'curly': 2,
