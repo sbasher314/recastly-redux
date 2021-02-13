@@ -18,12 +18,12 @@ export var changeVideoList = sinon.spy(unspiedChangeVideoList);
 
 export var mockReducer = sinon.spy(function(state = {lastAction: ''}, action) {
   switch (action.type) {
-  case 'CHANGE_VIDEO':
-    return {lastAction: action.type};
-  case 'CHANGE_VIDEO_LIST':
-    return {lastAction: action.type};
-  default:
-    return {lastAction: 'Unrecongized.'};
+    case 'CHANGE_VIDEO':
+      return {lastAction: action.type};
+    case 'CHANGE_VIDEO_LIST':
+      return {lastAction: action.type};
+    default:
+      return {lastAction: 'Unrecongized.'};
   }
 });
 

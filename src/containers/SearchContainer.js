@@ -1,9 +1,10 @@
+import React from 'react';
 import { connect } from 'react-redux';
 import Search from './../components/Search.js';
 import handleVideoSearch from '../actions/search.js'; //typo?
 
-var SearchContainer = () => {
-  return <Search />;
+var SearchContainer = (props) => {
+  return <Search handleSearchInputChange={props.handleSearchInputChange}/>;
 };
 
 const mapStateToProps = (state) => {

@@ -18,8 +18,5 @@ var VideoListEntry = ({video, handleVideoListEntryTitleClick}) => (
   </div>
 );
 
-VideoListEntry.propTypes = {
-  video: PropTypes.object.isRequired
-};
 
 export default VideoListEntry;
